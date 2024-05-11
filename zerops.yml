@@ -1,0 +1,11 @@
+zerops:
+  - setup: nodejs0
+    build:
+      base: nodejs@20
+      buildCommands:
+        - echo "noop"
+      deploy: index.js
+    run:
+      os: alpine
+      base: nodejs@20
+      start: node index.js
